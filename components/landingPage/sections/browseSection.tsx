@@ -26,13 +26,13 @@ export default function BrowseSection() {
                  Discover amazing products handpicked just for you, crafted to inspire and delight every day.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-[90%]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-[85%]">
                 {cards.map((card, index) => (
                     <div
                         key={index}
                         className="bg-white overflow-hidden flex flex-col items-center text-center"
                     >
-                        <div className="w-full h-full relative mb-5">
+                        <div className="w-full h-full relative mb-10">
                             <Image
                                 src={card.image}
                                 alt={card.title}
