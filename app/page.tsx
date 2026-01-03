@@ -1,4 +1,5 @@
 import BrowseSection from "@/components/landingPage/sections/browseSection";
+import OurProducts from "@/components/landingPage/sections/ourProducts";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         </section>
       </main>
       <BrowseSection />
+      <OurProducts/>
     </div>
   );
 }
