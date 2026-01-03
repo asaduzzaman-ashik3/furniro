@@ -17,7 +17,7 @@ export default function BrowseSection() {
     ];
 
     return (
-        <section className="py-12 px-6 h-screen w-13/15 mx-auto">
+        <section className="py-12 h-screen w-13/15 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-1">
                 Browse The Range
             </h2>
