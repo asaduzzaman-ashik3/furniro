@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BrowseSection from './../components/landingPage/sections/browseSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <button className="bg-[#B88E2F] text-white px-12 py-4 text-sm font-bold lg:mt-6">Shop Now</button>
         </div>
       </section>
+      <BrowseSection></BrowseSection>
     </main>
   );
 }
