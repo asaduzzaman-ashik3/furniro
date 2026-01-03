@@ -4,25 +4,25 @@ export default function BrowseSection() {
     const cards = [
         {
             image: "/images/browseImgOne.jpg",
-            title: "Card One",
+            title: "Dining",
         },
         {
             image: "/images/browseImgTwo.jpg",
-            title: "Card Two",
+            title: "Living",
         },
         {
             image: "/images/browseImgThree.jpg",
-            title: "Card Three",
+            title: "Bedroom",
         },
     ];
 
     return (
-        <section className="py-16 px-6 h-screen w-13/15 mx-auto">
+        <section className="py-12 px-6 h-screen w-13/15 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-1">
                 Browse The Range
             </h2>
 
-            <p className="text-center text-lg text-[#666666] mb-12">
+            <p className="text-center text-lg text-[#666666] mb-10">
                  Discover amazing products handpicked just for you, crafted to inspire and delight every day.
             </p>
 
@@ -32,7 +32,7 @@ export default function BrowseSection() {
                         key={index}
                         className="bg-white overflow-hidden flex flex-col items-center text-center"
                     >
-                        <div className="w-full h-full relative">
+                        <div className="w-full h-full relative mb-5">
                             <Image
                                 src={card.image}
                                 alt={card.title}
@@ -40,7 +40,7 @@ export default function BrowseSection() {
                                 className="object-cover rounded-2xl"
                             />
                         </div>
-                        <h3 className="text-xl font-semibold mt-7">{card.title}</h3>
+                        <h3 className="text-xl font-semibold">{card.title}</h3>
                     </div>
                 ))}
             </div>
