@@ -23,8 +23,8 @@ const navList = () => {
       <li>
         <Link 
           href="/" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
-            pathname === '/' ? 'text-[#92690a]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent pb-1 relative group transition-colors duration-300 ${
+            pathname === '/' ? 'text-[#B88E2F]' : 'hover:text-[#B88E2F]'
           }`}
         >
           Home
@@ -36,8 +36,8 @@ const navList = () => {
       <li>
         <Link 
           href="/shop" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
-            pathname === '/shop' ? 'text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent pb-1 relative group transition-colors duration-300 ${
+            pathname === '/shop' ? 'text-[#B88E2F]' : 'hover:text-[#B88E2F]'
           }`}
         >
           Shop
@@ -49,8 +49,8 @@ const navList = () => {
       <li>
         <Link 
           href="/about" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
-            pathname === '/about' ? 'text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent pb-1 relative group transition-colors duration-300 ${
+            pathname === '/about' ? 'text-[#B88E2F]' : 'hover:text-[#B88E2F]'
           }`}
         >
           About
@@ -62,8 +62,8 @@ const navList = () => {
       <li>
         <Link 
           href="/contact" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
-            pathname === '/contact' ? 'text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent pb-1 relative group transition-colors duration-300 ${
+            pathname === '/contact' ? 'text-[#B88E2F]' : 'hover:text-[#B88E2F]'
           }`}
         >
           Contact
@@ -103,10 +103,10 @@ const navList = () => {
             </div>
             <div className="navbar-end">
                 <ul className="flex items-center justify-center  lg:space-x-12 space-x-4">
-                    <li ><a><GoPersonAdd className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
-                    <li ><a><CiSearch className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
-                    <li ><a><CiHeart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
-                    <li ><a><CiShoppingCart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
+                    <li ><a><GoPersonAdd className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer transition-colors duration-300" /></a></li>
+                    <li ><a><CiSearch className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer transition-colors duration-300" /></a></li>
+                    <li ><a><CiHeart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer transition-colors duration-300" /></a></li>
+                    <li ><a><CiShoppingCart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer transition-colors duration-300" /></a></li>
                 </ul>
             </div>
         </div>
