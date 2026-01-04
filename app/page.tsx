@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      <main>
+
         <section
-          className="h-[80vh] bg-cover bg-center bg-no-repeat relative"
+          className="h-[80vh] bg-cover bg-center bg-no-repeat relative "
           style={{ backgroundImage: `url('/images/hego-img.jpg')` }}
         >
           <div className="bg-[#FFF3E3] p-10 absolute bottom-[20%] right-20 w-160 space-y-4">
@@ -18,7 +18,7 @@ export default function Home() {
             <button className="bg-[#B88E2F] text-white px-12 py-4 text-sm">Shop Now</button>
           </div>
         </section>
-      </main>
+
       <BrowseSection />
       <OurProducts/>
     </div>
