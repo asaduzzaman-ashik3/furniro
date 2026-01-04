@@ -1,11 +1,17 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsPersonSlash } from "react-icons/bs";
-import { CiHeart, CiSearch } from "react-icons/ci";
+import { CiHeart, CiSearch, CiShoppingCart } from "react-icons/ci";
+import Image from "next/image";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+import { GoPersonAdd } from "react-icons/go";
+
+
+
 
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100  py-4 w-13/15 mx-auto border-none">
+    <div className="navbar bg-base-100  py-4 w-14/15 mx-auto border-none">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +26,7 @@ export default function Navbar() {
         <li><a>Contact</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="text-xl"><Image src={"/images/navbar-logo.png"} alt="Logo" width={185} height={41}></Image></a>
   </div>
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 space-x-15">
@@ -32,10 +38,10 @@ export default function Navbar() {
   </div>
   <div className="navbar-end">
         <ul className="flex items-center space-x-10">
-        <li ><a><BsPersonSlash className="h-6 w-6"/></a></li>
+        <li ><a><GoPersonAdd className="h-6 w-6"/></a></li>
         <li ><a><CiSearch className="h-6 w-6"/></a></li>
         <li ><a><CiHeart className="h-6 w-6"/></a></li>
-        <li ><a><AiOutlineShoppingCart className="h-6 w-6   "/></a></li>
+        <li ><a><CiShoppingCart className="h-6 w-6   "/></a></li>
     </ul>
   </div>
 </div>
