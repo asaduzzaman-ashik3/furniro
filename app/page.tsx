@@ -1,9 +1,11 @@
 import BrowseSection from "@/components/landingPage/sections/browseSection";
 import OurProducts from "@/components/landingPage/sections/ourProducts";
+import Navbar from './../components/shared/Navbar';
 
 export default function Home() {
   return (
     <div>
+      <Navbar></Navbar>
       <main>
         <section
           className="h-[80vh] bg-cover bg-center bg-no-repeat relative"
