@@ -1,3 +1,5 @@
+"use client";
+
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsPersonSlash } from "react-icons/bs";
 import { CiHeart, CiSearch, CiShoppingCart } from "react-icons/ci";
@@ -5,6 +7,7 @@ import Image from "next/image";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { GoPersonAdd } from "react-icons/go";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 
@@ -12,21 +15,50 @@ import Link from "next/link";
 
 
 export default function Navbar() {
+  const pathname = usePathname();
 
 const navList = () => {
   return (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link 
+          href="/" 
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
+            pathname === '/' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          }`}
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <Link href="/shop">Shop</Link>
+        <Link 
+          href="/shop" 
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
+            pathname === '/shop' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          }`}
+        >
+          Shop
+        </Link>
       </li>
       <li>
-        <Link href="/about">About</Link>
+        <Link 
+          href="/about" 
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
+            pathname === '/about' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          }`}
+        >
+          About
+        </Link>
       </li>
       <li>
-        <Link href="/contact">Contact</Link>
+        <Link 
+          href="/contact" 
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
+            pathname === '/contact' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          }`}
+        >
+          Contact
+        </Link>
       </li>
     </>
   );
