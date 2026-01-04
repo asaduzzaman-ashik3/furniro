@@ -23,41 +23,53 @@ const navList = () => {
       <li>
         <Link 
           href="/" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
-            pathname === '/' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
+            pathname === '/' ? 'text-[#92690a]' : ''
           }`}
         >
           Home
+          <span className={`absolute bottom-0 left-0 h-0.5 bg-[#B88E2F] transition-all duration-300 ${
+            pathname === '/' ? 'w-full' : 'w-0 group-hover:w-full'
+          }`}></span>
         </Link>
       </li>
       <li>
         <Link 
           href="/shop" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
-            pathname === '/shop' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
+            pathname === '/shop' ? 'text-[#B88E2F]' : ''
           }`}
         >
           Shop
+          <span className={`absolute bottom-0 left-0 h-0.5 bg-[#B88E2F] transition-all duration-300 ${
+            pathname === '/shop' ? 'w-full' : 'w-0 group-hover:w-full'
+          }`}></span>
         </Link>
       </li>
       <li>
         <Link 
           href="/about" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
-            pathname === '/about' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
+            pathname === '/about' ? 'text-[#B88E2F]' : ''
           }`}
         >
           About
+          <span className={`absolute bottom-0 left-0 h-0.5 bg-[#B88E2F] transition-all duration-300 ${
+            pathname === '/about' ? 'w-full' : 'w-0 group-hover:w-full'
+          }`}></span>
         </Link>
       </li>
       <li>
         <Link 
           href="/contact" 
-          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 ${
-            pathname === '/contact' ? 'border-b-2 border-[#B88E2F] text-[#B88E2F]' : ''
+          className={`hover:bg-transparent focus:bg-transparent active:bg-transparent hover:!text-current focus:!text-current active:!text-current pb-1 relative group ${
+            pathname === '/contact' ? 'text-[#B88E2F]' : ''
           }`}
         >
           Contact
+          <span className={`absolute bottom-0 left-0 h-0.5 bg-[#B88E2F] transition-all duration-300 ${
+            pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
+          }`}></span>
         </Link>
       </li>
     </>
@@ -91,10 +103,10 @@ const navList = () => {
             </div>
             <div className="navbar-end">
                 <ul className="flex items-center justify-center  lg:space-x-12 space-x-4">
-                    <li ><a><GoPersonAdd className="h-6 w-6" /></a></li>
-                    <li ><a><CiSearch className="h-6 w-6" /></a></li>
-                    <li ><a><CiHeart className="h-6 w-6" /></a></li>
-                    <li ><a><CiShoppingCart className="h-6 w-6" /></a></li>
+                    <li ><a><GoPersonAdd className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
+                    <li ><a><CiSearch className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
+                    <li ><a><CiHeart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
+                    <li ><a><CiShoppingCart className="h-6 w-6 hover:text-[#B88E2F] cursor-pointer" /></a></li>
                 </ul>
             </div>
         </div>
