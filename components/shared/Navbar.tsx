@@ -81,7 +81,7 @@ const navList = () => {
 
     return (
         <div className="sticky top-0 z-50 bg-white">
-            <div className="navbar bg-base-100  py-4 w-14/15 mx-auto border-none ">
+            <div className="navbar bg-base-100  py-4 w-13/15 mx-auto border-none ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="" className="btn btn-ghost lg:hidden">

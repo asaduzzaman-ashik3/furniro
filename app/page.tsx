@@ -1,6 +1,7 @@
 import BrowseSection from "@/components/landingPage/sections/browseSection";
 import OurProducts from "@/components/landingPage/sections/ourProducts";
 import Navbar from './../components/shared/Navbar';
+import InspirationsSection from "./../components/landingPage/sections/inspirationsSection";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
             <button className="bg-[#B88E2F] text-white px-12 py-4 text-sm">Shop Now</button>
           </div>
         </section>
-
       <BrowseSection />
       <OurProducts/>
+      <InspirationsSection/>
     </div>
   );
 }
