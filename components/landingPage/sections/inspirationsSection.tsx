@@ -14,33 +14,35 @@ export default function InspirationsSection() {
                         <Image src="/images/inspiration-img.jpg" alt="Inspiration" width={500} height={400}></Image>
                     </div>
                     <div>
-                        <div className="carousel w-full h-[75vh]">
+                        <div className="carousel w-full h-[72vh]">
                             <div id="item1" className="carousel-item w-full">
                                 <img
-                                    src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                                    src="/images/carouselOne.jpg"
                                     className="w-full" />
                             </div>
                             <div id="item2" className="carousel-item w-full">
                                 <img
-                                    src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                                    src="/images/carouselTwo.jpg"
                                     className="w-full" />
                             </div>
                             <div id="item3" className="carousel-item w-full">
                                 <img
-                                    src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                                    src="/images/carouselThree.jpg"
                                     className="w-full" />
                             </div>
                             <div id="item4" className="carousel-item w-full">
                                 <img
-                                    src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                                    src="/images/carouselFour.jpg"
                                     className="w-full" />
                             </div>
+                            
+                            
                         </div>
-                        <div className="flex w-full justify-start gap-2 py-2">
-                            <a href="#item1" className="btn btn-xs">1</a>
-                            <a href="#item2" className="btn btn-xs">2</a>
-                            <a href="#item3" className="btn btn-xs">3</a>
-                            <a href="#item4" className="btn btn-xs">4</a>
+                        <div className="flex w-full justify-start gap-2 py-5 bg-transparent">
+                            <a href="#item1" className="rounded-full bg-[#B88E2F] p-2 border-2 border-[#B88E2F] w-5 h-5"></a>
+                            <a href="#item2" className="rounded-full bg-[#B88E2F] p-2 border-2 border-[#B88E2F] w-5 h-5"></a>
+                            <a href="#item3" className="rounded-full bg-[#B88E2F] p-2 border-2 border-[#B88E2F] w-5 h-5"></a>
+                            <a href="#item4" className="rounded-full bg-[#B88E2F] p-2 border-2 border-[#B88E2F] w-5 h-5"></a>
                         </div>
                     </div>
                 </div>
