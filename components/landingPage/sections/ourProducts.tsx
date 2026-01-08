@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function OurProducts() {
     const products = [
@@ -30,16 +31,16 @@ export default function OurProducts() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center relative">
                 {displayedProducts.map((product) => (
-                    <div
+                    <Link href={`/products/${product.id}`}
                         key={product.id}
-                        className="card shadow-none rounded-none bg-[#F4F5F7] h-115 w-full flex flex-col relative"
+                        className="card shadow-none rounded-none bg-[#F4F5F7] h-115 w-full flex flex-col relative group"
                     >
                         <figure className="h-140 w-full relative">
                             <Image
                                 src={product.image}
                                 alt={product.name}
                                 fill
-                                className="object-cover h-full"
+                                className="object-cover h-full group-hover:opacity-90 transition-opacity"
                             />
                         </figure>
                         <div className="p-5 pb-8 flex-1 flex flex-col justify-between gap-2">
@@ -60,7 +61,7 @@ export default function OurProducts() {
                                 <span className="text-white text-sm">New</span>
                             </div>
                         )}
-                    </div>
+                    </Link>
                 ))}
             </div>
 
